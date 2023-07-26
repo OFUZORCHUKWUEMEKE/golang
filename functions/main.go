@@ -12,6 +12,7 @@ func main() {
 }
 
 func two() (int, int) {
+
 	return 5, 5
 }
 
