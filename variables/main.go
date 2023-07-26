@@ -5,6 +5,12 @@ import "fmt"
 func main() {
 	var myName = "Ofuzor Chukwuemeke"
 
+	const (
+		Economy    = 1
+		Business   = 2
+		FirstClass = 3
+	)
+
 	username := "admin"
 	fmt.Println("My name is", myName)
 
