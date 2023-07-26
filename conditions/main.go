@@ -43,6 +43,5 @@ func main() {
 	} else {
 		accessDenied()
 	}
-
-	accessGranted()
+	// accessGranted()
 }
