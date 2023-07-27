@@ -2,52 +2,25 @@ package main
 
 import "fmt"
 
-type Emeke struct {
-	name        string
-	age         int
-	bio         string
-	description string
+type rectangle struct {
+	length  int
+	breadth int
 }
 
-type Passenger struct {
-	name        string
-	age         int
-	availabilty bool
+func Area(data rectangle) int {
+	return data.breadth * data.length
 }
 
-type Bus struct {
-	Frontseat Passenger
-}
-
-var sample struct {
-	field string
-	a, b  int
+func Perimeter(data rectangle) int {
+	return 2*data.breadth + 2*data.length
 }
 
 func main() {
-	data := Emeke{
-		name:        "Ofuzor Chukwuemeke",
-		age:         22,
-		bio:         "I love Building Softwares with Golang and Javascript",
-		description: "I love writing code",
-	}
-	fmt.Println(data)
+	data := rectangle{length: 50, breadth: 4}
+	area := Area(data)
+	fmt.Println(area)
+	perimeter := Perimeter(data)
+	fmt.Println(perimeter)
 
-	casey := Passenger{"Casey", 1, false}
-	fmt.Println(casey)
-
-	var (
-		bill = Passenger{name: "Emeke", age: 22, availabilty: true}
-	)
-
-	fmt.Println(bill)
-
-	var emeke Passenger
-
-	emeke.age = 22
-	emeke.availabilty = true
-	emeke.name = "Ofuzor Chukwuemeke"
-
-	fmt.Println(emeke)
-
+	//  double(area)
 }
