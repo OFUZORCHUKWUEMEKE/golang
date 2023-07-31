@@ -1,19 +1,36 @@
 package main
 
+import "fmt"
+
+// type Emeke struct {
+// 	name string
+// 	age  int
+// }
+
 func main() {
-	const maxSpeed = 30
-	const MinPurchasePrice = 40
+	// fmt.print("Processing request again")
+	name := make(map[string]int)
 
-	retrieve()
+	num := 0
 
-	addNumbers(2, 2)
+	name["Emeke"] = 10
+
+	name["Ekenem"] = 10
+
+	name["Ifeanyi"] = 10
+
+	name["Chidinma"] = 10
+
+	for _, amount := range name {
+		num += amount
+		fmt.Println(num)
+	}
+	fmt.Println("Total Number", num)
+
+	fmt.Println(name)
+	// fmt.Println(name)
 }
 
-func retrieve() int {
-	const age = 22
-	return age
-}
+// func retrieve() {
 
-func addNumbers(a, b int) int {
-	return a + b
-}
+// }

@@ -2,10 +2,6 @@ package main
 
 import "fmt"
 
-// myMap1 := make(map[string]int)
-
-// Maps store data in key-value pairs
-
 func main() {
 	shoppingList := make(map[string]int)
 	// len(shoppingList)
