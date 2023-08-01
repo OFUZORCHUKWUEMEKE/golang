@@ -9,7 +9,10 @@ import "fmt"
 
 func main() {
 	// fmt.print("Processing request again")
+	dataName := []string{"name", "age", "dob", "account_number", "bank_name"}
 	name := make(map[string]int)
+
+	fmt.Println(dataName)
 
 	num := 0
 
@@ -30,7 +33,3 @@ func main() {
 	fmt.Println(name)
 	// fmt.Println(name)
 }
-
-// func retrieve() {
-
-// }
