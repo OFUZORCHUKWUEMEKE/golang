@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 const (
 	Form   = "fit"
 	INJURY = "injured"
@@ -33,5 +35,5 @@ func (play *Squad) starter(Player) {
 }
 
 func main() {
-
+	fmt.Println("data")
 }
