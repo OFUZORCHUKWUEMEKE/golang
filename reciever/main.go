@@ -22,7 +22,9 @@ func (lot *ParkingLot) vacateSpace(spaceNum int) {
 }
 
 func main() {
+	// make
 	lot := ParkingLot{spaces: make([]Space, 6)}
+
 	fmt.Println("Initial:", lot)
 	lot.occupyeSpace(1)
 	occupySpace(&lot, 2)
