@@ -23,7 +23,7 @@ func sumFile(rd bufio.Reader) int {
 		}
 		sum += num
 	}
-
+	return sum
 }
 
 func main() {
